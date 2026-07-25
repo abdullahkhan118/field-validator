@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gradle -v)",
+      "Bash(sdk list *)",
+      "Bash(java -version)",
+      "Bash(gradle wrapper *)",
+      "Bash(./gradlew build *)",
+      "Bash(/usr/libexec/java_home *)",
+      "Bash(xargs sed -i '' 's/jvmToolchain\\(21\\)/jvmToolchain\\(17\\)/')",
+      "Bash(./gradlew --stop)",
+      "Bash(unzip -t gradle/wrapper/gradle-wrapper.jar)",
+      "Bash(gradle build *)"
+    ]
+  }
+}
