@@ -2,6 +2,10 @@ plugins {
     id("org.jetbrains.kotlin.jvm")
     id("org.jetbrains.kotlin.plugin.serialization")
     id("com.google.devtools.ksp")
+    // Injects `<ClassName>Validator.validate(this)` into every @Validated class's constructor.
+    // Requires :compiler-plugin and :compiler-plugin-gradle to have been published to
+    // mavenLocal at least once first — see .claude/references/compiler-plugins.md.
+    id("io.github.abdullahkhan118.fieldvalidator") version "0.1.0"
     application
 }
 

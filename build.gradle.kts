@@ -10,5 +10,7 @@ allprojects {
 
     repositories {
         mavenCentral()
+        // See settings.gradle.kts: :compiler-plugin's jar is resolved from here at compile time.
+        mavenLocal()
     }
 }

@@ -31,11 +31,7 @@ data class NumericSample(
     @ByteRange(min = 0, max = 10)
     @ByteDistinct(values = [1, 2, 3])
     val level: Byte,
-) {
-    init {
-        NumericSampleValidator.validate(this)
-    }
-}
+)
 
 class NumericConstraintsTest {
 
